@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+body {
+    background: rgb(224, 224, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 20px 30px rgb(45, 45, 85);
+}
+.container .levaStr {
+    height: 100%;
+    position: relative;
+    background: rgb(80, 80, 215);
+}
+.profilInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.profilInfo .profilovka {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: -15px;
+    
+}
+.profilInfo .profilovka img {
+   width: 100%;
+   height: auto; 
+   top: 0;
+   left: 0; 
+}
+.kontaktInfo {
+    color: white;
+    margin: 15px;
+} 
+.kontaktInfo ul {
+    position: relative;
+    margin-top: 15px;
+    white-space: nowrap;
+}   
+.kontaktInfo ul li {
+    list-style-type: none;
+    margin-top: 15px;
+    }
+.kontaktInfo ul li .icon {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    font-size: 25px;
+}
+.kontaktInfo .text a {
+    color: white;
+}
+.kontaktInfo .text {
+    margin: 20px 0 30px 0;
+}
+.kontaktInfo .text a:hover {
+    color: rgb(218, 26, 26);
+    font-weight: bold;
+}
+.kontaktInfo h3 {
+    margin:10px 0 10px 0;
+}
+.kontaktInfo .nadpis {
+    text-transform: uppercase;
+    margin-top: 30px;
+}        
+.container .pravaStr {
+    position: relative;
+    background: white;
+    padding: 35px 15px;
+}
+.hlavicka .nadpis1 {
+    color: rgb(47, 9, 135);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.hlavicka .nadpis2 {
+    color:rgb(47, 9, 135);
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    border-bottom: solid 2px rgb(125, 125, 127);
+}
+.vzdelaniPraxe .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.vzdelaniPraxe .nadpis3 {
+    color: rgb(218, 26, 26);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.vzdelaniPraxe .box .rok {
+    min-width: 70px;
+    font-weight: 400;
+    margin: 0 20px 0 0; 
+}    
+.vzdelaniPraxe .netucne {
+    font-weight: 400; 
+}
+.vzdelaniPraxe .podnadpis {
+    margin-left: 90px;
+}
+.vzdelaniPraxe ul li {
+    list-style-type: square;
+    margin-left: 200px;
+}
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 1100px) {
+    .vzdelaniPraxe .box {
+        flex-direction: column;
+    }
+    .vzdelaniPraxe .box .rok {
+        margin-bottom: 5px;;
+    }
+}
